@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -40,6 +41,8 @@ public class BadPractice extends AppCompatActivity
     }
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 class BadAdapter extends ArrayAdapter<Item>
 {
     private int backgroundColor;
@@ -51,11 +54,12 @@ class BadAdapter extends ArrayAdapter<Item>
         this.items = items;
     }
 
+    @SuppressLint("ViewHolder")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
-        View listItemView = null;
+        View listItemView;
         listItemView = LayoutInflater.from(getContext()).inflate(R.layout.best_list_item, parent, false);
 
         int color = ContextCompat.getColor(getContext(), backgroundColor);

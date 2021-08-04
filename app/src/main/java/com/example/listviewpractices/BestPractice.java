@@ -42,6 +42,8 @@ public class BestPractice extends AppCompatActivity
     }
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 class BestAdapter extends ArrayAdapter<Item>
 {
     private int backgroundColor;
