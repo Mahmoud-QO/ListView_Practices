@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ListView Practices</string>
+    <string name="bad_practice">Bad Practice</string>
+    <string name="better_practice">Better Practice</string>
+    <string name="best_practice">Best Practice</string>
+</resources>
